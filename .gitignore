@@ -1,0 +1,15 @@
+Gemfile.lock
+vendors/
+.idea/
+.bundle/
+Passengerfile.json
+passenger/
+bin/
+public/upload/
+public/css/
+public/full.raw
+public/full.raw.html
+compass/.sass-cache/
+stash/
+.rspec_status
+.yardoc
