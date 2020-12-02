@@ -3,46 +3,45 @@
 module Cotcube
   module Indicators
     class Carrier
-
       def initialize(length:)
-	raise "Need a length for the carrier" unless length and length.is_a? Integer
-	@length = length
-	@content = []
+        raise ArgumentError, 'Need a length to be an integer' unless length.is_a? Integer
+
+        @length = length
+        @content = []
       end
 
       def <<(obj)
-	@content << obj
-	@content.shift if @content.length > @length
-	obj
+        @content << obj
+        @content.shift if @content.length > @length
+        obj
       end
 
       def shift
-	@content.shift
+        @content.shift
         # sending explicit return to avoid returning a value here
-	return
+        nil
       end
 
       def clear
-	@content = []
+        @content = []
       end
 
       def get
-	@content
+        @content
       end
 
       def size
-	@content.size
+        @content.size
       end
-      alias_method :length, :size
+      alias length size
 
       def empty?
-	@content.empty?
+        @content.empty?
       end
 
       def [](key)
-	@content.map{|x| x[key]}
+        @content.map { |x| x[key] }
       end
     end
   end
-
 end

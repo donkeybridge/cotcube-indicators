@@ -2,20 +2,19 @@
 
 module Cotcube
   module Indicators
-
-    def true_range
+    def true_range(high: :high, low: :low, close: :close)
       carrier = Carrier.new(length: 1)
-      return lambda do |x|
-        if carrier.get.empty?
-          carrier << x
-          return (x[:high] - x[:low]).to_f
+      lambda do |current|
+        raise "Missing keys of #{high}, #{low}, #{close} in '#{current}'" unless [high, low, close] - current.keys == []
+
+        if carrier.empty?
+          carrier << current
+          return (current[high] - current[low]).to_f
         end
-        last = carrier.get[0]
-        current = x
+        last = carrier.get.first
         carrier << current
-        ([ current[:high], last[:close] ].max - [ current[:low], last[:close] ].min).to_f
+        ([current[high], last[close]].max - [current[low], last[close]].min).to_f
       end
     end
   end
 end
-
