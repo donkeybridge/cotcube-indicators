@@ -1,3 +1,7 @@
+## 0.1.10 (December 03, 2020)
+  - added indicator 'threshold' including spec
+  - some minor improvements to .gitignore and .gemspec
+
 ## 0.1.9 (December 02, 2020)
   - worked through rubocops
   - wrote according README.md
