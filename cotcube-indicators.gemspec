@@ -9,15 +9,13 @@ Gem::Specification.new do |spec|
   spec.summary       = 'Lambda based indicators, decoupled from legacy cotcube'
   spec.description   = 'Lambda based indicators, decoupled from legacy cotcube'
 
-  spec.homepage      = 'https://github.com/donkeybridge/cotcube-indicators'
+  spec.homepage      = 'https://github.com/donkeybridge/'+ spec.name
   spec.license       = 'BSD-4-Clause'
   spec.required_ruby_version = Gem::Requirement.new('~> 2.7')
 
-  spec.metadata['allowed_push_host'] = 'http://100.100.0.14:5001'
-
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/donkeybridge/cotcube-indicators'
-  spec.metadata['changelog_uri'] = 'https://github.com/donkeybridege/cotcube-indicators/CHANGELOG.md'
+  spec.metadata['source_code_uri'] = spec.homepage
+  spec.metadata['changelog_uri'] = spec.homepage + '/CHANGELOG.md'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

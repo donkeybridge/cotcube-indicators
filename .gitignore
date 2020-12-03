@@ -11,5 +11,6 @@ public/full.raw
 public/full.raw.html
 compass/.sass-cache/
 stash/
+*.gem
 .rspec_status
 .yardoc
