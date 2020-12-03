@@ -10,9 +10,10 @@ require_relative 'cotcube-indicators/ema'
 require_relative 'cotcube-indicators/sma'
 require_relative 'cotcube-indicators/rsi'
 require_relative 'cotcube-indicators/true_range'
+require_relative 'cotcube-indicators/threshold'
 
 module Cotcube
   module Indicators
-    module_function :calc, :change, :ema, :sma, :rsi, :true_range, :index, :score
+    module_function :calc, :change, :ema, :sma, :rsi, :true_range, :index, :score, :threshold
   end
 end
