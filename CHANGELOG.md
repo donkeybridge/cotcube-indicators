@@ -1,3 +1,6 @@
+## 0.1.11 (December 05, 2020)
+  - Fixing 'smoothing' keyword argument in EMA
+
 ## 0.1.10 (December 03, 2020)
   - added indicator 'threshold' including spec
   - some minor improvements to .gitignore and .gemspec
