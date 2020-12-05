@@ -1,3 +1,6 @@
+## 0.1.12 (December 05, 2020)
+  - added tests for SMA, EMA, RSI
+
 ## 0.1.11 (December 05, 2020)
   - Fixing 'smoothing' keyword argument in EMA
 
