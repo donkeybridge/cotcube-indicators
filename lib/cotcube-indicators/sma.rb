@@ -3,7 +3,6 @@
 module Cotcube
   module Indicators
     def sma(length:, key:)
-      raise 'Missing parameter, need :length and :value options' if opts[:length].nil? || opts[:value].nil?
 
       carrier = Cotcube::Indicators::Carrier.new(length: length)
       lambda do |x|

@@ -3,8 +3,6 @@
 module Cotcube
   module Indicators
     def rsi(length:, key:, debug: false)
-      raise 'Missing parameter, need :key and :length options' if length.nil? || key.nil?
-
       carrier = Carrier.new(length: length)
 
       lambda do |x|
