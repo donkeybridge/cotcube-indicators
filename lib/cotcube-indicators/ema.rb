@@ -3,9 +3,8 @@
 module Cotcube
   module Indicators
     # the classic exponential moving average
-    def ema(key:, length:, smoothing:)
-      raise 'Missing parameter, need :length' if length.nil? || (not length.is_a? Integer)
-      raise 'Missing parameter, need :key'    if key.nil?
+    def ema(key:, length:, smoothing: nil)
+      raise 'Missing parameter, need :length' unless length.is_a? Integer
 
       smoothing ||= (2 / (length - 1).to_f.round(2))
       carrier = Carrier.new(length)
