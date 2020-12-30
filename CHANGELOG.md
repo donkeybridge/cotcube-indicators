@@ -1,3 +1,6 @@
+## 0.1.13 (December 30, 2020)
+  - small fix to #score and #index to support missing values in series
+
 ## 0.1.12 (December 05, 2020)
   - added tests for SMA, EMA, RSI
 
