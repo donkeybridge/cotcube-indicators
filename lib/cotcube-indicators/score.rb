@@ -11,7 +11,7 @@ module Cotcube
         current = x[key.to_sym]
         current = current.abs if abs
         if current.zero?
-          carrier.shift
+          carrier << 0
           return 0
 
         end

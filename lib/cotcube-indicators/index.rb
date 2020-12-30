@@ -24,7 +24,7 @@ module Cotcube
           puts "RESULT: #{res}" if debug
           return reverse ? (1 - res.to_f).round(3).to_f : res.round(3).to_f
         else
-          carrier.shift
+          carrier << 0
           return 0
         end
       end
