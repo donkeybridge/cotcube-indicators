@@ -7,7 +7,7 @@ module Cotcube
       raise ArgumentError, "Need to set :upper: (set to Float::INFINITY to omit)" if upper.nil? 
       raise ArgumentError, "Need to set :lower unless :abs is set" if lower.nil? and not abs
       raise ArgumentError, ":lower, upper must be numeric" if not upper.is_a?(Numeric) and ( abs ? true : lower.is_a?(Numeric) )
-      raise ArgumentError, "Found bogus, :lower #{lower} must be lower than :upper #{upper}" if not abs and lower >= upper
+      raise ArgumentError, "Found bogus, :lower #{lower} must be lower than :upper #{upper}" if not abs and lower > upper
       # For this indicator, we just need to remembers -1, 0 or 1. That does not need a helper class.
       carrier = 0
 
