@@ -1,3 +1,6 @@
+## 0.1.14 (July 31, 2021)
+  - calc: adding support for more param variables (a .. e)
+
 ## 0.1.13 (December 30, 2020)
   - small fix to #score and #index to support missing values in series
 
