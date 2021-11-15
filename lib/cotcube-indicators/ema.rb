@@ -13,9 +13,9 @@ module Cotcube
       lambda do |x|
         current = x[key.to_sym]
         carrier << if carrier.empty?
-                     current * (smoothing / (1 + length))
+                     current * (smoothing / (1.0 + length))
                    else
-                     current * (smoothing / (1 + length)) + carrier.get[-1] * (1 - (smoothing / (1 + length)))
+                     current * (smoothing / (1.0 + length)) + carrier.get[-1] * (1.0 - (smoothing / (1.0 + length)))
                    end
         carrier.size < length ? -1.0 : carrier.get.last
       end

@@ -8,7 +8,7 @@ module Cotcube
       lambda do |x|
         current = x[key.to_sym]
         carrier << current
-        carrier.size < length ? 0.0 : (carrier.get.reduce(:+) / carrier.length).to_f
+        carrier.size < length ? 0.0 : (carrier.get.reduce(:+) / carrier.length.to_f).to_f
       end
     end
   end
