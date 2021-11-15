@@ -1,3 +1,6 @@
+## 0.1.15 (November 15, 2021)
+  - fixing ema and sma by applying to_f to divisors
+
 ## 0.1.14 (July 31, 2021)
   - calc: adding support for more param variables (a .. e)
 
