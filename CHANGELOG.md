@@ -1,3 +1,6 @@
+## 0.2.0 (April 02, 2023)
+  - switching to FreeBSD base and ruby 3.2.2
+
 ## 0.1.15 (November 15, 2021)
   - fixing ema and sma by applying to_f to divisors
 
